@@ -2,10 +2,9 @@
 
 import click
 
-from .subcommands.version import command
+from .subcommands import command_group
 
-@click.group
+
+@click.command(cls=command_group)
 def main():
     pass
-
-main.add_command(command.main, "version")
