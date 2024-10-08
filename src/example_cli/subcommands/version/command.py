@@ -3,5 +3,6 @@ import click
 
 
 @click.command()
-def main():
+@click.pass_context
+def main(ctx):
     print("Hello version")

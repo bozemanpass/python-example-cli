@@ -1,7 +1,9 @@
 
 import click
 
+from ...util.di import d
 
 @click.command()
-def main():
-    print("Hello create")
+@click.pass_context
+def main(ctx):
+    print(f"Hello create, debug is: {d.o.debug}")
