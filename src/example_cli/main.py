@@ -1,4 +1,11 @@
-from .subcommands.version.command import main as version_main
+# Copyright © 2024 Bozeman Pass, Inc.
 
+import click
+
+from .subcommands.version import command
+
+@click.group
 def main():
-    version_main()
+    pass
+
+main.add_command(command.main, "version")
