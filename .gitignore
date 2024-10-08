@@ -1,0 +1,7 @@
+# Ignore byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+# Ignore Egg files
+*.egg-info/
+# Ignore the dev venv
+dev

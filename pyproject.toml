@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-example-cli"
+version = "1.0.1"
+authors = [{name="David Boreham", email="david@bozemanpass.com" }]
+description = "Captures best practice for Python CLI tool building and packaging"
+readme = "README.md"
+dependencies = []
+requires-python = ">=3.10"
+
+[project.scripts]
+python-example-cli = "example_cli:main.main"
+
+[project.urls]
+"Homepage" = "https://github.com/bozemanpass/python-example-cli"
+"Bug Tracker" = "https://github.com/bozemanpass/python-example-cli/issues"
